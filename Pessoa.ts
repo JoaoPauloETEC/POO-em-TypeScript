@@ -1,5 +1,5 @@
-namespace empresa{
-    class Pessoa{
+namespace Empresa{
+    export abstract class Pessoa{
         private _nome:string;
         private _idade:number;
         private _cpf:string;
