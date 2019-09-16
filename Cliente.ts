@@ -1,6 +1,7 @@
 ///<reference path="Pessoa.ts"/>
+///<reference path="IConta.ts"/>
 namespace Empresa{
-    export class Cliente extends Pessoa{
+    export class Cliente extends Pessoa implements IConta{
         private _codCliente:number;
         private _credito:number;
         private _banco:Banco;
@@ -24,6 +25,10 @@ namespace Empresa{
         }
         public setBanco(banco:Banco){
             this._banco = banco;
+        }
+
+        public mostraConta(codCliente:number){
+            return codCliente + " Sua conta";
         }
     }
 }

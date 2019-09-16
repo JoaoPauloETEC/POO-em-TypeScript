@@ -31,6 +31,7 @@ namespace Empresa{
     document.getElementById('cpf').textContent = cliente.getCPF();
     document.getElementById('credito').textContent = cliente.getCredito().toString();
     document.getElementById('banco').textContent = cliente.getBanco().getNome();
+    document.getElementById('conta').textContent = cliente.mostraConta(cliente.getCodCliente()).toString();
 
     banco.addCliente(cliente);
     banco.addCliente(cliente2);

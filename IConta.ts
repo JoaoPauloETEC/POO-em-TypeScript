@@ -1,3 +1,5 @@
 namespace Empresa{
-    export 
+    export interface IConta{
+        mostraConta(codCliente:number);
+    }
 }
